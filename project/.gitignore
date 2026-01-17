@@ -1,0 +1,10 @@
+# Docker volumes
+mysql_data/
+docker-entrypoint-initdb.d/
+
+# OS files
+.DS_Store
+
+# Logs
+*.log
+
