@@ -17,15 +17,14 @@ services:
     container_name: db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: tsunasta
+      MYSQL_DATABASE: tsunasuta
       MYSQL_USER: user
       MYSQL_PASSWORD: pass
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
       - ./db:/docker-entrypoint-initdb.d
       - mysql_data:/var/lib/mysql
 
 volumes:
   mysql_data:
-  - ./db:/docker-entrypoint-initdb.d
